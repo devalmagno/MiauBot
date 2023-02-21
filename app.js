@@ -1,7 +1,5 @@
 import Discord, { IntentsBitField, EmbedBuilder } from 'discord.js';
 import fetch from 'node-fetch';
-import { config } from 'dotenv';
-config();
 
 const client = new Discord.Client({
   intents: [
@@ -10,7 +8,7 @@ const client = new Discord.Client({
     IntentsBitField.Flags.MessageContent
   ]
 });
-const api_key = process.env.APIKEY;
+const api_key = 'live_I1Om78zoCWmmF4NDxMaUVGQNqU9TtehRVhoOuWk78XphakdvHgm7uSBKKsZ8j14l';
 const prefix = '!';
 
 client.on('ready', () => {
@@ -118,4 +116,4 @@ client.on('messageCreate', async (message) => {
   }
 });
 
-client.login(process.env.TOKEN);
+client.login('MTA3NzI0MjExNjk0Nzg0MTA5NQ.G-NhJu.DnPj-vRIgWPSSw_l3GPgCQYTzgM2kcULmrz7OQ');
