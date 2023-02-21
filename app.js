@@ -1,5 +1,6 @@
-import Discord, { IntentsBitField, EmbedBuilder } from 'discord.js';
-import fetch from 'node-fetch';
+const Discord = require('discord.js');
+const { IntentsBitField, EmbedBuilder } = require('discord.js');
+const fetch = require('node-fetch');
 
 const client = new Discord.Client({
   intents: [
