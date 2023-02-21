@@ -3,8 +3,6 @@ import fetch from 'node-fetch';
 import { config } from 'dotenv';
 config();
 
-console.log(process.env.TOKEN)
-
 const client = new Discord.Client({
   intents: [
     IntentsBitField.Flags.Guilds,
